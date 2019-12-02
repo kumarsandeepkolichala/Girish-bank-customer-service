@@ -27,8 +27,8 @@ pipeline {
      // steps {
        // withDockerRegistry([credentialsId: 'docker-hub', url: "http://261167483116.dkr.ecr.us-east-2.amazonaws.com/girish"]) {
          // sh '/usr/bin/docker push girish99/bank-customer-service:latest'
-        }
-      }
+     //   }
+      //}
     }
   }
 }

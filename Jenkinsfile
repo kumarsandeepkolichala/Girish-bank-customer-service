@@ -20,13 +20,13 @@ pipeline {
     }
     stage('Docker Build') {
       steps {
-        sh '/usr/bin/docker build -t satheeshch/bank-customer-service:latest .'
+        sh '/usr/bin/docker build -t girishravella99@gmail.com/bank-customer-service:latest .'
       }
     }
     stage('Push image') {
       steps {
-        withDockerRegistry([credentialsId: 'docker-hub', url: "https://index.docker.io/v1/"]) {
-          sh '/usr/bin/docker push satheeshch/bank-customer-service:latest'
+        withDockerRegistry([credentialsId: 'docker-hub', url: "http://261167483116.dkr.ecr.us-east-2.amazonaws.com/girish"]) {
+          sh '/usr/bin/docker push girish99/bank-customer-service:latest'
         }
       }
     }
